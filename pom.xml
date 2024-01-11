@@ -167,7 +167,7 @@
 						<version>3.0.0-M1</version>
 						<configuration>
 							<repository>
-								<id>release-repo</id>
+								<id>central</id>
 								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
 								<username>anaabadlorenzo24@gmail.com</username>
 								<password>131200Anaabad</password>
