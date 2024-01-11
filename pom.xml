@@ -391,5 +391,26 @@
         			</plugin>
 			</plugins>
 		</pluginManagement>
-	</build>
+		<profiles>
+    			<profile>
+      				<id>release</id>
+      					<build>
+        					<plugins>
+          						<plugin>
+            							<groupId>org.apache.maven.plugins</groupId>
+            							<artifactId>maven-deploy-plugin</artifactId>
+           						 	<version>3.0.0-M1</version>
+            							<configuration>
+              								<repository>
+                								<id>release-repo</id>
+									        <url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release</url>
+                								<username>anaabadlorenzo24@gmail.com</username>
+                								<password>131200Anaabad</password>
+              								</repository>
+            							</configuration>
+          						</plugin>
+       			 			</plugins>
+      					</build>
+    				</profile>
+			</build>
 </project>
