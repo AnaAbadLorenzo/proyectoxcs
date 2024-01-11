@@ -25,4 +25,4 @@ install:
   
 script:
   - mvn clean install
-  - asadmin deploy --user $GLASSFISH_USER --password <(echo $GLASSFISH_PASSWORD) target/
+  - asadmin deploy --user $GLASSFISH_USER --password $GLASSFISH_PASSWORD target/
