@@ -15,6 +15,11 @@
         		<name>a0qnlwwnt4dwy-artifactory-primary-0-snapshots</name>
         		<url>https://anaxcs.jfrog.io/artifactory/proyectoxcs-libs-snapshot</url>
     		</snapshotRepository>
+    		<repository>
+        		<id>central</id>
+        		<name>a0qnlwwnt4dwy-artifactory-primary-0-releases</name>
+        		<url>https://anaxcs.jfrog.io/artifactory/proyectoxcs-libs-release</url>
+    		</repository>
 	</distributionManagement>
 
 	<modules>
