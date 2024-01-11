@@ -10,16 +10,11 @@
 	<name>μStories 23/24 Team A</name>
 
 	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>https://www.sing-group.org/dt/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Internal SNAPSHOT Releases</name>
-			<url>https://www.sing-group.org/dt/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
+    		<snapshotRepository>
+        		<id>snapshots</id>
+        		<name>a0qnlwwnt4dwy-artifactory-primary-0-snapshots</name>
+        		<url>https://anaxcs.jfrog.io/artifactory/proyectoxcs-libs-snapshot</url>
+    		</snapshotRepository>
 	</distributionManagement>
 
 	<modules>
