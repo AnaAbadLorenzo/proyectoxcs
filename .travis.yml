@@ -1,6 +1,13 @@
 language: java
 dist: trusty
 
+env:
+  global:
+    - GLASSFISH_USER=admin
+    - GLASSFISH_PASSWORD=admin
+    - GLASSFISH_HOST=localhost
+    - GLASSFISH_PORT=4848
+
 jdk:
   - openjdk8
 
@@ -18,4 +25,4 @@ install:
   
 script:
   - mvn clean install
-  - mvn glassfish:deploy
+  - asadmin deploy --user $GLASSFISH_USER --password <(echo $GLASSFISH_PASSWORD) target/
