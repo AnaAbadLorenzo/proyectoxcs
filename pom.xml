@@ -13,12 +13,12 @@
     		<repository>
         		<id>central</id>
         		<name>a0qnlwwnt4dwy-artifactory-primary-0-releases</name>
-       			<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release</url>
+       			<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
     		</repository>
 		 <snapshotRepository>
         		<id>snapshots</id>
         		<name>a0qnlwwnt4dwy-artifactory-primary-0-snapshots</name>
-        		<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-snapshot</url>
+        		<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-snapshot-local</url>
     		</snapshotRepository>
 	</distributionManagement>
 
@@ -168,7 +168,7 @@
 						<configuration>
 							<repository>
 								<id>release-repo</id>
-								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release</url>
+								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
 								<username>anaabadlorenzo24@gmail.com</username>
 								<password>131200Anaabad</password>
 							</repository>
