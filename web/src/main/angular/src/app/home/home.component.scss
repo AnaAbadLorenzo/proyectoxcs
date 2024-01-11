@@ -1,0 +1,40 @@
+.workspace {
+  max-width: 1200px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 1300px) {
+  .workspace {
+    max-width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .workspace {
+    max-width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workspace {
+    max-width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.explore-button {
+  background-color: #222222;
+  color: #FFFFFF;
+}

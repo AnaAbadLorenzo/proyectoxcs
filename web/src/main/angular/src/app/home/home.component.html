@@ -1,0 +1,63 @@
+<div class="container">
+  <main class="workspace">
+    <div class="grid justify-content-center">
+
+      <div class="col-12">
+        <div class="text-center">
+          <h1>Relatos recientes</h1>
+        </div>
+      </div>
+
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+      <div class="col-12" *ngIf="!isLoading && !stories.length">
+        <mat-card>
+          <mat-card-content class="flex-1">
+            <p> No hay relatos recientes</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-12" *ngIf="stories.length">
+        <ms-carousel/>
+      </div>
+
+      <div class="col-12" *ngIf="!isLoading && stories.length">
+        <div class="text-center">
+          <h3 class="m-0">Todos los relatos</h3>
+        </div>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4" *ngFor="let story of stories">
+        <a routerLink="/shared/story-reader/{{story.id}}">
+          <mat-card class="flex-container">
+            <mat-card-header>
+              <mat-card-subtitle>{{story.gender}}</mat-card-subtitle>
+              <mat-card-title class="py-2">{{story.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="flex-1">
+              <p>{{story.text.substr(0, 60)}} {{story.text.length > 60 ? '...' : ''}}</p>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="py-1 text-right text-xs">
+                <strong> {{story.topic1}} </strong>
+                /
+                {{story.topic2}}
+              </div>
+              <mat-divider></mat-divider>
+              <div class="flex justify-content-between pt-2">
+                <span> {{story.author}} </span>
+                <span> {{story.publicationDate ? story.publicationDate.toLocaleDateString() : '' }}
+                                </span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </a>
+      </div>
+      <div class="col-6">
+        <a mat-raised-button class="w-full explore-button" routerLink="/explore">
+          Explorar
+        </a>
+      </div>
+    </div>
+  </main>
+</div>

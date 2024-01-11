@@ -1,0 +1,41 @@
+.toolbar-section {
+  display: flex; 
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.toolbar-section input { 
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 10px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.dark-toolbar {
+  background-color: #222222;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .toolbar-section {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .toolbar-section {
+    padding: 0 3rem;
+  }
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+

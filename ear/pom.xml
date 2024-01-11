@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>es.uvigo.esei.dgss.teamA.microstories</groupId>
+		<artifactId>dgss2324-teamA-microstories-pom</artifactId>
+		<version>0.1.0</version>
+	</parent>
+	<artifactId>dgss2324-teamA-microstories-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<name>EAR</name>
+	<description>μStories 23/24 Team A - EAR</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>dgss2324-teamA-microstories-domain</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>dgss2324-teamA-microstories-service</artifactId>
+			<version>${project.version}</version>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>dgss2324-teamA-microstories-rest</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>dgss2324-teamA-microstories-web</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<configuration>
+					<applicationId>dgss2324-teamA-microstories</applicationId>
+					<applicationName>μstories 23/24 Team A</applicationName>
+					<displayName>μstories 23/24 Team A</displayName>
+					<earName>${project.parent.artifactId}-${project.version}</earName>
+					<defaultLibBundleDir>lib/</defaultLibBundleDir>
+					<skinnyWars>true</skinnyWars>
+					<modules>
+						<webModule>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>dgss2324-teamA-microstories-web</artifactId>
+							<contextRoot>/microstories-2324-teamA/web</contextRoot>
+						</webModule>
+						<webModule>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>dgss2324-teamA-microstories-rest</artifactId>
+							<contextRoot>/microstories-2324-teamA/rest</contextRoot>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.glassfish.maven.plugin</groupId>
+				<artifactId>maven-glassfish-plugin</artifactId>
+				<configuration>
+					<skip>false</skip>
+					<filename>${project.parent.artifactId}-${project.version}.${project.packaging}</filename>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

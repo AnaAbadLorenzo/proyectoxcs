@@ -1,0 +1,30 @@
+<div class="workspace col-12 md:col-12 lg:col-12">
+    <div class ="button-goBack">
+      <button mat-raised-button color="primary" (click)="goBack()">Volver atrás</button>
+    </div>
+    <mat-card>
+        <mat-card-header class = "center">
+            <mat-card-title class="py-3">{{story.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="py-3 flex-4">
+            <p >{{story.text}}</p>
+        </mat-card-content>
+        <mat-card-content>
+          <div class="flex-container">
+            <div class="py-2 text-right text-xs">
+              {{story.gender}}
+            </div>
+            <div class="py-2 text-left text-xs">
+              <strong> {{story.topic1}} </strong> /
+              {{story.topic2}}
+            </div>
+          </div>
+            <mat-divider ></mat-divider>
+            <div class="flex justify-content-center pt-2">
+                <span> {{story.author}} </span>
+                <span> - </span>
+                <span> {{ story.publicationDate | date:'dd/MM/yyyy' }} </span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="banner">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Buscar...</mat-label>
+      <input matInput placeholder="Buscar" class="search-input" #searchInputValue/>
+      <mat-icon matSuffix class="search-button" (click)="search(searchInputValue.value)">search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <main class="workspace">
+    <div class="grid justify-content-center">
+      <button mat-button class="explore-button" [routerLink]="['/explore']">Explorar</button>
+    </div>
+    <div class="grid justify-content-center">
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+      <div class="col" *ngIf="!isLoading && !stories.length">
+        <mat-card>
+          <mat-card-content class="flex-1">
+            <p> No hay publicaciones que coincidan con los parámetros de búsqueda </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4" *ngFor=" let story of stories">
+        <a routerLink = "/shared/story-reader/{{story.id}}">
+          <mat-card class="flex-container">
+            <mat-card-header>
+              <mat-card-subtitle>{{story.gender}}</mat-card-subtitle>
+              <mat-card-title class="py-2">{{story.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="flex-1">
+              <p>{{story.text.substr(0,60)}} {{story.text.length > 60 ? '...':''}}</p>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="py-1 text-right text-xs">
+                <strong> {{story.topic1}} </strong>
+                /
+                {{story.topic2}}
+              </div>
+              <mat-divider></mat-divider>
+              <div class="flex justify-content-between pt-2">
+                <span> {{story.author}} </span>
+                <span> {{story.publicationDate ? story.publicationDate.toLocaleDateString() : '' }} </span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+    <div *ngIf="!isLoading && stories.length">
+      <mat-paginator [length]="totalItems" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)"></mat-paginator>
+    </div>
+  </main>
+
+</div>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+    <User login="efrem" password="efrempass" role="user"/>
+    <User login="sada" password="sadapass" role="user"/>
+    <User login="beverley" password="beverleypass" role="user"/>
+    <User login="gail" password="gailpass" role="user"/>
+    <User login="konstantine" password="konstantinepass" role="user"/>
+    <User login="holmes" password="holmespass" role="user"/>
+    <User login="fritz" password="fritzpass" role="admin"/>
+    <User login="kare" password="karepass" role="user"/>
+    <User login="alonzo" password="alonzopass" role="user"/>
+    <User login="tobin" password="tobinpass" role="admin"/>
+    <User login="carola" password="carolapass" role="user"/>
+    <User login="papageno" password="papagenopass" role="user"/>
+    <User login="nari" password="naripass" role="user"/>
+    <User login="witty" password="wittypass" role="user"/>
+    <User login="tyrus" password="tyruspass" role="user"/>
+    <User login="xylia" password="xyliapass" role="user"/>
+    <User login="corey" password="coreypass" role="user"/>
+    <User login="mellie" password="melliepass" role="user"/>
+    <User login="fletcher" password="fletcherpass" role="user"/>
+    <User login="jordana" password="jordanapass" role="user"/>
+    <User login="pauly" password="paulypass" role="user"/>
+    <User login="gabriella" password="gabriellapass" role="user"/>
+    <User login="corliss" password="corlisspass" role="user"/>
+    <User login="jayson" password="jaysonpass" role="user"/>
+    <User login="nevins" password="nevinspass" role="user"/>
+    <User login="celine" password="celinepass" role="user"/>
+    <User login="emmalee" password="emmaleepass" role="user"/>
+    <User login="ronni" password="ronnipass" role="user"/>
+    <User login="dukie" password="dukiepass" role="user"/>
+    <User login="joni" password="jonipass" role="user"/>
+    <User login="astra" password="astrapass" role="user"/>
+    <User login="jarvis" password="jarvispass" role="user"/>
+    <User login="jobi" password="jobipass" role="user"/>
+    <User login="janeen" password="janeenpass" role="user"/>
+    <User login="mikael" password="mikaelpass" role="user"/>
+    <User login="maegan" password="maeganpass" role="user"/>
+    <User login="deina" password="deinaepass" role="user"/>
+    <User login="maryjane" password="maryjanepass" role="user"/>
+    <User login="bab" password="babpass" role="user"/>
+    <User login="kevyn" password="kevynpass" role="user"/>
+    <User login="eugen" password="eugenpass" role="user"/>
+    <User login="lily" password="lilypass" role="user"/>
+    <User login="costa" password="costapass" role="user"/>
+    <User login="otto" password="ottopass" role="user"/>
+    <User login="mylo" password="mylopass" role="user"/>
+    <User login="juditha" password="juditha" role="user"/>
+    <User login="langston" password="langstonpass" role="user"/>
+    <User login="lammond" password="lammondpass" role="user"/>
+    <User login="imogen" password="imogenpass" role="user"/>
+    <User login="gardner" password="gardnerpass" role="user"/>
+</dataset>

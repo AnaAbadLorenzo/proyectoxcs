@@ -1,0 +1,28 @@
+<mat-toolbar class="dark-toolbar">
+  <div class="toolbar-section">
+    <a mat-button routerLink="/home" class="text-xl font-medium" (click)="limpiarInputYCerrar()">
+      <span class="text-2xl">µ</span>Stories
+    </a>
+  </div>
+  <span class="spacer"></span>
+  <div class="toolbar-section">
+    <ng-container *ngIf="!mostrarInput; else inputField">
+      <a mat-button (click)="toggleInput()">
+        <mat-icon>search</mat-icon> Buscar
+      </a>
+    </ng-container>
+    <ng-template #inputField>
+        <input matInput placeholder="Escribe aquí..." #inputRef (blur)="searchValue = inputRef.value">
+    </ng-template>
+    <a mat-button [routerLink]="['/search', searchValue]" *ngIf="mostrarInput" (click)="limpiarInputYCerrar()">
+      <mat-icon>search</mat-icon> Buscar
+    </a>
+
+    <ng-container *ngIf="isLogged(); else loginButton">
+      <button  mat-button  (click)="doLogout()">Cerrar Sesión</button >
+    </ng-container>
+    <ng-template #loginButton>
+    <a mat-button [routerLink]="['/login']">Iniciar Sesión</a>
+    </ng-template>
+  </div>
+</mat-toolbar>

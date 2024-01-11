@@ -1,0 +1,101 @@
+.container {
+
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login {
+  margin: 1rem auto;
+  padding: 2em 4em 2rem 4em;
+  max-width: 300px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.login input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 0.625rem 0;
+  padding: 0.875rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.125rem;
+  font-family: Raleway, sans-serif;
+}
+
+.login input[type=text],
+.login input[type=password] {
+  border: 0.0625rem solid #c0c0c0;
+  transition: .2s;
+}
+
+.login input[type=text]:hover {
+  border-color: #222222;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.login input[type=submit] {
+  border: none;
+  background: #999999;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 1.25rem 0;
+}
+
+.login input[type=submit]:hover {
+  background: #222222;
+}
+
+.login h2 {
+  margin: 1.25rem 0 3rem 0 ;
+  color: #222222;
+  font-size: 1.75rem;
+}
+
+.login p {
+  margin-bottom: 2.5rem;
+}
+
+.links {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 0.0625rem solid #c0c0c0;
+  margin-bottom: 0.625rem;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 0.625rem;
+}
+
+.links a:first-child {
+  text-align: left;
+}
+
+.links a:last-child {
+  text-align: right;
+}
+
+.login h2,
+.login p,
+.login a {
+  text-align: center;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}

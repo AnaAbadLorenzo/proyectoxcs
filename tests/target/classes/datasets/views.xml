@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <View id_view="1" id_story="1" view_date="2023-11-18 12:00:00"/>
+    <View id_view="2" id_story="1" view_date="2023-11-18 13:00:00"/>
+    <View id_view="3" id_story="2" view_date="2023-11-18 14:00:00"/>
+    <View id_view="4" id_story="3" view_date="2023-11-18 15:00:00"/>
+    <View id_view="5" id_story="3" view_date="2023-11-18 16:00:00"/>
+    <View id_view="6" id_story="3" view_date="2023-11-18 17:00:00"/>
+    <View id_view="7" id_story="3" view_date="2023-11-18 18:00:00"/>
+    <View id_view="8" id_story="1" view_date="2023-11-18 19:00:00"/>
+    <View id_view="9" id_story="4" view_date="2023-11-18 19:00:00"/>
+    <View id_view="10" id_story="7" view_date="2023-11-18 20:00:00"/>
+    <View id_view="11" id_story="6" view_date="2023-11-18 20:00:00"/>
+</dataset>

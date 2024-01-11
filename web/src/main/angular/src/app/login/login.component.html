@@ -1,0 +1,8 @@
+<div class="container">
+  <form class="login" [formGroup]="credentialsFormGroup" (ngSubmit)="doLogin()">
+    <h2>Login</h2>
+    <input type="text" placeholder="User Name" formControlName="login" />
+    <input type="password" placeholder="Password" formControlName="password" />
+    <input type="submit" value="Log in"/>
+  </form>
+</div>

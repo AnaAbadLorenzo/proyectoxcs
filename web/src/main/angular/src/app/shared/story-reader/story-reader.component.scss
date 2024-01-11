@@ -1,0 +1,54 @@
+.workspace {
+  max-width: 1000px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card{
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .workspace {
+    max-width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .workspace {
+    max-width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workspace {
+    max-width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.button-goBack{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

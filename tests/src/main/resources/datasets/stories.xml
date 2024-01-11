@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+    <Story id_story="1" title="Sliding Doors"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="HORROR" topic_two="HISTORY" author="efrem"
+           publication_date="2023-06-23 00:00:00"/>
+    <Story id_story="2" title="Maurice"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="ADVENTURE" author="sada" publication_date="2022-03-01 00:00:00"/>
+    <Story id_story="3" title="Metrobranding"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HISTORY" topic_two="ROMANCE" author="beverley"
+           publication_date="2019-06-02 00:00:00"/>
+    <Story id_story="4" title="Mirror, The (Ayneh)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="CHILDREN" topic_two="ADVENTURE" author="gail"
+           publication_date="2021-06-25 00:00:00"/>
+    <Story id_story="5" title="Mirror, The (Ayneh)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="CHILDREN" topic_two="ADVENTURE" author="konstantine"/>
+    <Story id_story="6" title="Tale of Two Cities, A"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HORROR" topic_two="ADVENTURE" author="holmes"
+           publication_date="2023-10-13 00:00:00"/>
+    <Story id_story="7" title="Bread and Chocolate (Pane e cioccolata)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="HISTORY" author="fritz" publication_date="2023-09-24 00:00:00"/>
+    <Story id_story="8" title="Skyscraper (Skyskraber)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="HORROR" topic_two="SCIENCE" author="kare"
+           publication_date="2021-05-25 00:00:00"/>
+    <Story id_story="9" title="Charlotte Sometimes"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HORROR" topic_two="SUSPENSE" author="alonzo"
+           publication_date="2019-08-18 00:00:00"/>
+    <Story id_story="10" title="Our Dancing Daughters"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="ROMANCE" topic_two="SUSPENSE" author="tobin"
+           publication_date="2021-11-16 00:00:00"/>
+    <Story id_story="11" title="Queen Margot (Reine Margot, La)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="SCIENCE" author="carola" publication_date="2022-03-21 00:00:00"/>
+    <Story id_story="12" title="Green Ray, The (Rayon vert, Le)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="SCIENCE" topic_two="CHILDREN" author="papageno"/>
+    <Story id_story="13" title="Private Lives of Elizabeth and Essex, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="SCIENCE" author="nari" publication_date="2019-09-19 00:00:00"/>
+    <Story id_story="14" title="Jim Jefferies: Alcoholocaust"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="SCIENCE" topic_two="ROMANCE" author="witty"
+           publication_date="2023-08-02 00:00:00"/>
+    <Story id_story="15" title="When Dinosaurs Ruled the Earth"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="HISTORY" topic_two="ADVENTURE" author="tyrus"/>
+    <Story id_story="16" title="Wetlands (Feuchtgebiete)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="SCIENCE" topic_two="HORROR" author="xylia"
+           publication_date="2022-02-04 00:00:00"/>
+    <Story id_story="17" title="Downhill"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="HORROR" author="corey" publication_date="2023-09-01 00:00:00"/>
+    <Story id_story="18" title="Uphill"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="SUSPENSE" topic_two="CHILDREN" author="mellie"
+           publication_date="2022-06-13 00:00:00"/>
+    <Story id_story="19" title="City Heat"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="HISTORY" topic_two="HORROR" author="fletcher"
+           publication_date="2022-11-30 00:00:00"/>
+    <Story id_story="20" title="Tormented"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="CHILDREN" topic_two="HORROR" author="jordana"/>
+    <Story id_story="21" title="Condemned, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="CHILDREN" topic_two="SCIENCE" author="pauly"/>
+    <Story id_story="22" title="Sheepman, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HISTORY" author="gabriella" publication_date="2021-12-07 00:00:00"/>
+    <Story id_story="23" title="Two Cents Worth of Hope (Due soldi di speranza)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="ROMANCE" author="corliss"/>
+    <Story id_story="24" title="Encounter in the Third Dimension"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="CHILDREN" topic_two="ROMANCE" author="jayson"/>
+    <Story id_story="25" title="Night Train To Lisbon"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="CHILDREN" author="nevins" publication_date="2021-04-03 00:00:00"/>
+    <Story id_story="26" title="Paper Lion"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="CHILDREN" topic_two="ADVENTURE" author="celine"
+           publication_date="2023-01-26 00:00:00"/>
+    <Story id_story="27" title="Bye-Bye"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="ROMANCE" topic_two="SUSPENSE" author="emmalee"/>
+    <Story id_story="28" title="Runaway Jury"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="ROMANCE" topic_two="HORROR" author="ronni"/>
+    <Story id_story="29" title="Big Bounce, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="ADVENTURE" topic_two="ROMANCE" author="dukie"
+           publication_date="2023-08-03 00:00:00"/>
+    <Story id_story="30" title="Scandal Sheet"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="SUSPENSE" topic_two="HISTORY" author="joni"
+           publication_date="2022-07-06 00:00:00"/>
+    <Story id_story="31" title="Your Life in 65 (Tu vida en 65')"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="SCIENCE" topic_two="HISTORY" author="astra"
+           publication_date="2022-04-05 00:00:00"/>
+    <Story id_story="32" title="Island at War"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SCIENCE" topic_two="ADVENTURE" author="jarvis"
+           publication_date="2022-09-11 00:00:00"/>
+    <Story id_story="33" title="Heart Is Deceitful Above All Things, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="ADVENTURE" topic_two="SUSPENSE" author="jobi"
+           publication_date="2019-05-17 00:00:00"/>
+    <Story id_story="34" title="Rebecca"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="ROMANCE" topic_two="CHILDREN" author="janeen"
+           publication_date="2023-02-21 00:00:00"/>
+    <Story id_story="35" title="Alamo, The"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="CHILDREN" topic_two="SCIENCE" author="mikael"/>
+    <Story id_story="36" title="Eddie and the Cruisers II: Eddie Lives!"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HORROR" topic_two="CHILDREN" author="maegan"
+           publication_date="2021-03-24 00:00:00"/>
+    <Story id_story="37" title="Lucky Luke: The Ballad of the Daltons"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="ADVENTURE" topic_two="SCIENCE" author="deina"
+           publication_date="2019-12-11 00:00:00"/>
+    <Story id_story="38" title="Puff, Puff, Pass"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="HORROR" author="maryjane" publication_date="2020-07-17 00:00:00"/>
+    <Story id_story="39" title="Female Perversions"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="HISTORY" topic_two="ROMANCE" author="bab"
+           publication_date="2021-06-10 00:00:00"/>
+    <Story id_story="40" title="Aberdeen"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="CHILDREN" author="kevyn"/>
+    <Story id_story="41" title="Electric Shadows (Meng ying tong nian)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SUSPENSE" topic_two="CHILDREN" author="eugen"/>
+    <Story id_story="42" title="Sunset"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="STORY" topic_one="HISTORY" topic_two="ROMANCE" author="lily"
+           publication_date="2019-12-17 00:00:00"/>
+    <Story id_story="43" title="Caddyshack II"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="ADVENTURE" topic_two="ROMANCE" author="costa"
+           publication_date="2020-09-06 00:00:00"/>
+    <Story id_story="44" title="Playing from the Plate (Grajacy z talerza)"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="HORROR" topic_two="SUSPENSE" author="otto"
+           publication_date="2022-12-09 00:00:00"/>
+    <Story id_story="45" title="Vanya on 42nd Street"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SCIENCE" topic_two="SUSPENSE" author="mylo"
+           publication_date="2021-12-10 00:00:00"/>
+    <Story id_story="46" title="Mantle"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SCIENCE" author="juditha" publication_date="2021-01-01 00:00:00"/>
+    <Story id_story="47" title="The Beehive"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="CHILDREN" topic_two="SUSPENSE" author="langston"
+           publication_date="2020-07-29 00:00:00"/>
+    <Story id_story="48" title="One Fine Day"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SCIENCE" author="lammond" publication_date="2023-07-16 00:00:00"/>
+    <Story id_story="49" title="Bakhita"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="NANO_STORY" topic_one="ROMANCE" topic_two="HORROR" author="imogen"
+           publication_date="2021-07-31 00:00:00"/>
+    <Story id_story="50" title="Trojan Eddie"
+           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna scelerisque, elementum elit nec, egestas quam. Vivamus rhoncus."
+           gender="POETRY" topic_one="SCIENCE" topic_two="SUSPENSE" author="gardner"/>
+</dataset>

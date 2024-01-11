@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="banner">
+    <!-- Explore Search Form-->
+    <form>
+      <div class="grid justify-content-center align-items-center">
+          <mat-form-field class="search-field">
+            <mat-label>Quiero ver</mat-label>
+            <mat-select name="gender" [value]="genders[0].value" #genderInputValue>
+              <mat-option *ngFor="let gender of genders" [value]="gender.value">{{gender.viewValue}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="search-field">
+            <mat-label>Tema</mat-label>
+            <mat-select name="topic" [value]="topics[0].value" #topicInputValue>
+              <mat-option *ngFor="let topic of topics" [value]="topic.value">{{topic.viewValue}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="search-field">
+            <mat-label>en</mat-label>
+            <mat-select name="date" [value]="pubdates[0].value" #dateInputValue>
+              <mat-option *ngFor="let pubdate of pubdates" [value]="pubdate.value">{{pubdate.viewValue}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+    </form>
+    <!-- /Explore Search Form-->
+  </div>
+
+  <main class="workspace">
+    <div class="grid justify-content-center">
+      <button mat-button class="explore-button"
+              (click)="explore(genderInputValue.value, topicInputValue.value, dateInputValue.value)">Explorar
+      </button>
+    </div>
+    <div class="grid justify-content-center">
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+      <div class="col" *ngIf="!isLoading && !stories.length">
+        <mat-card>
+          <mat-card-content class="flex-1">
+            <p> No hay publicaciones que coincidan con los parámetros de búsqueda </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-12 md:col-6 lg:col-4" *ngFor=" let story of stories">
+        <a routerLink="/shared/story-reader/{{story.id}}">
+          <mat-card class="flex-container">
+            <mat-card-header>
+              <mat-card-subtitle>{{story.gender}}</mat-card-subtitle>
+              <mat-card-title class="py-2">{{story.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="flex-1">
+              <p>{{story.text.substr(0, 60)}} {{story.text.length > 60 ? '...' : ''}}</p>
+            </mat-card-content>
+            <mat-card-content>
+              <div class="py-1 text-right text-xs">
+                <strong> {{story.topic1}} </strong>
+                /
+                {{story.topic2}}
+              </div>
+              <mat-divider></mat-divider>
+              <div class="flex justify-content-between pt-2">
+                <span> {{story.author}} </span>
+                <span> {{story.publicationDate ? story.publicationDate.toLocaleDateString() : '' }} </span>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </a>
+      </div>
+    </div>
+    <div *ngIf="!isLoading && stories.length">
+      <mat-paginator [length]="totalItems" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+                     (page)="onPageChange($event)"></mat-paginator>
+    </div>
+  </main>
+
+</div>
