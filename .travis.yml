@@ -18,3 +18,4 @@ install:
   
 script:
   - mvn clean install
+  - mvn glassfish:deploy
