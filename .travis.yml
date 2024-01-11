@@ -28,7 +28,7 @@ script:
   - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://b4bf-83-34-97-207.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
   - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
   - chmod +x jfrog
-  - ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_PASSWORD
+  - ./jfrog rt config --url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --password $ARTIFACTORY_PASSWORD
   - ./jfrog rt u "/home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear" travisci-generic-local --build-name=travisci-generic-artifactory --build-number=$TRAVIS_BUILD_NUMBER --flat=false
   - ./jfrog rt bce travisci-generic-artifactory $TRAVIS_BUILD_NUMBER
   - ./jfrog rt bp travisci-generic-artifactory $TRAVIS_BUILD_NUMBER
