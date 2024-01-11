@@ -25,4 +25,4 @@ install:
   
 script:
   - mvn clean install
-  - asadmin deploy --user $GLASSFISH_USER --password $GLASSFISH_PASSWORD  --host $GLASSFISH_HOST --port $GLASSFISH_PORT target/
+  - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=http://localhost:9000 -Dsonar.login=maven
