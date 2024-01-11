@@ -10,16 +10,16 @@
 	<name>μStories 23/24 Team A</name>
 
 	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Internal Releases</name>
-			<url>https://www.sing-group.org/dt/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Internal SNAPSHOT Releases</name>
-			<url>https://www.sing-group.org/dt/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
+    		<repository>
+        		<id>central</id>
+        		<name>a0qnlwwnt4dwy-artifactory-primary-0-releases</name>
+       			<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release</url>
+    		</repository>
+		 <snapshotRepository>
+        		<id>snapshots</id>
+        		<name>a0qnlwwnt4dwy-artifactory-primary-0-snapshots</name>
+        		<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-snapshot</url>
+    		</snapshotRepository>
 	</distributionManagement>
 
 	<modules>
@@ -155,6 +155,29 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<profiles>
+    	<profile>
+      		<id>release</id>
+      		<build>
+        		<plugins>
+          			<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<version>3.0.0-M1</version>
+						<configuration>
+							<repository>
+								<id>release-repo</id>
+								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release</url>
+								<username>anaabadlorenzo24@gmail.com</username>
+								<password>131200Anaabad</password>
+							</repository>
+						</configuration>
+          			</plugin>
+       			</plugins>
+      		</build>
+    	</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -384,6 +407,11 @@
 						</components>
 					</configuration>
 				</plugin>
+				<plugin>
+           				<groupId>org.sonarsource.scanner.maven</groupId>
+            				<artifactId>sonar-maven-plugin</artifactId>
+            				<version>3.9.1.2184</version> <!-- Ajusta la versión según tus necesidades -->
+        			</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
