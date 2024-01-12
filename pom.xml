@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>es.uvigo.esei.dgss.teamA.microstories</groupId>
 	<artifactId>dgss2324-teamA-microstories-pom</artifactId>
-	<version>0.1.0</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>μStories 23/24 Team A</name>
@@ -158,7 +158,7 @@
 
 	<profiles>
     	<profile>
-      		<id>release</id>
+      		<id>snapshot</id>
       		<build>
         		<plugins>
           			<plugin>
@@ -167,8 +167,8 @@
 						<version>3.0.0-M1</version>
 						<configuration>
 							<repository>
-								<id>central</id>
-								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
+								<id>snapshots</id>
+								<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-snapshot-local</url>
 								<username>anaabadlorenzo24@gmail.com</username>
 								<password>131200Anaabad</password>
 							</repository>
