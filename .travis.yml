@@ -25,6 +25,7 @@ install:
   
 script:
   - mvn clean install
+  - mvn build
   - mvn deploy -Psnapshot
   - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://b4bf-83-34-97-207.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
   - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
