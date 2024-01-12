@@ -30,8 +30,9 @@ script:
   - wget https://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip
   - unzip glassfish-5.0.zip -d glassfish
   - chmod +x jfrog
+  - chmod +x glassfish
   - ./jfrog rt config --url https://anaxcs.jfrog.io/artifactory --user anaabadlorenzo24@gmail.com --password 131200Anaabad
   - ./jfrog rt u "/home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear" xcs-libs-release-local --build-name=travisci-generic-artifactory --build-number=1 --flat=false
   - ./jfrog rt bce travisci-generic-artifactory 1
   - ./jfrog rt bp travisci-generic-artifactory 1
-  - glassfish/bin/asadmin deploy --user admin --password admin /home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear https://c3aa-83-34-97-207.ngrok-free.app
+  - ./asadmin deploy --user admin --password admin /home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear https://c3aa-83-34-97-207.ngrok-free.app
