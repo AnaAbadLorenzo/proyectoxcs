@@ -1,13 +1,6 @@
 language: java
 dist: trusty
 
-env:
-  global:
-    - GLASSFISH_USER=admin
-    - GLASSFISH_PASSWORD=admin
-    - GLASSFISH_HOST=https://c3aa-83-34-97-207.ngrok-free.app
-    - GLASSFISH_PORT=4848
-
 jdk:
   - openjdk8
 
@@ -27,12 +20,10 @@ script:
   - mvn clean install -U
   - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://b4bf-83-34-97-207.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
   - wget https://dl.bintray.com/jfrog/jfrog-cli-go/1.7.1/jfrog-cli-linux-amd64/jfrog
-  - wget https://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip
-  - unzip glassfish-5.0.zip -d glassfish
+  - mvn glassfish:deploy
   - chmod +x jfrog
-  - chmod +x glassfish
   - ./jfrog rt config --url https://anaxcs.jfrog.io/artifactory --user anaabadlorenzo24@gmail.com --password 131200Anaabad
   - ./jfrog rt u "/home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear" xcs-libs-release-local --build-name=travisci-generic-artifactory --build-number=1 --flat=false
   - ./jfrog rt bce travisci-generic-artifactory 1
   - ./jfrog rt bp travisci-generic-artifactory 1
-  - asadmin deploy --user admin --password admin /home/travis/build/AnaAbadLorenzo/proyectoxcs/ear/target/dgss2324-teamA-microstories-pom-0.1.0.ear https://c3aa-83-34-97-207.ngrok-free.app
+

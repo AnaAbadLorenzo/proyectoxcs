@@ -24,7 +24,6 @@
 
 	<modules>
 		<module>domain</module>
-		<module>tests</module>
 		<module>service</module>
 		<module>rest</module>
 		<module>web</module>
@@ -81,7 +80,19 @@
 				<artifactId>javaee-api</artifactId>
 				<version>${javaee.api.version}</version>
 			</dependency>
-			
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>3.1.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.platform</groupId>
+				<artifactId>jakarta.jakartaee-api</artifactId>
+				<version>9.0.0</version> <!-- Utiliza la versión adecuada de las API de Jakarta EE -->
+				<scope>provided</scope>
+			</dependency>
 
 			<!-- Modules -->
 			<dependency>
@@ -194,18 +205,6 @@
 				<executions>
 					<execution>
 						<id>attach-sources</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
 						<goals>
 							<goal>jar</goal>
 						</goals>
@@ -388,21 +387,22 @@
 					<artifactId>maven-glassfish-plugin</artifactId>
 					<version>2.1</version>
 					<configuration>
-						<glassfishDirectory>C:\\Program Files\\glassfish6\\glassfish</glassfishDirectory>
+						<glassfishDirectory>C:/Program Files/glassfish6/glassfish</glassfishDirectory>
 						<user>admin</user>
-						<passwordFile>C:\\Program Files\\glassfish6\\glassfish\\domains\\domain1\\config\\domain-passwords</passwordFile>
+						<passwordFile>C:/Program Files/glassfish6/glassfish/domains/domain1/config/domain-passwords</passwordFile>
 						<autoCreate>true</autoCreate>
 						<debug>true</debug>
 						<echo>true</echo>
 						<domain>
 							<name>domain1</name>
+							<host>localhost</host>
 							<adminPort>4848</adminPort>
 							<httpPort>8080</httpPort>
 						</domain>
 						<components>
 							<component>
 								<name>${project.artifactId}</name>
-								<artifact>${project.parent.artifactId}-${project.version}.${project.packaging}.ear</artifact>
+								<artifact>target/${project.parent.artifactId}-${project.version}.${project.packaging}.ear</artifact>
 							</component>
 						</components>
 					</configuration>

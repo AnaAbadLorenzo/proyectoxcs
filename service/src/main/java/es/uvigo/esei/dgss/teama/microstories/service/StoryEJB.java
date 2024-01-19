@@ -6,9 +6,7 @@ import es.uvigo.esei.dgss.teama.microstories.enums.Topic;
 
 import javax.annotation.Resource;
 import javax.annotation.security.PermitAll;
-import javax.ejb.EJBAccessException;
-import javax.ejb.SessionContext;
-import javax.ejb.Stateless;
+import javax.ejb.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
@@ -20,13 +18,14 @@ import java.util.Date;
 import java.util.List;
 
 /** This class contains the logic of Stories */
-@Stateless
+@Stateful(name = "StoryEJB", mappedName = "ejb/StoryEJB")
 public class StoryEJB {
 
-  @Resource private SessionContext sessionContext;
   @PersistenceContext private EntityManager em;
 
-  @PermitAll
+  public StoryEJB() {
+  }
+
   public List<StoryEntity> findRecentStories() {
     return em.createQuery(
             "SELECT s FROM StoryEntity s WHERE s.publicationDate IS NOT NULL ORDER BY s.publicationDate DESC",
@@ -35,12 +34,11 @@ public class StoryEJB {
         .getResultList();
   }
 
-  @PermitAll
   public StoryEntity findStoryById(Integer id_story) {
     return em.find(StoryEntity.class, id_story);
   }
 
-  @PermitAll
+
   public List<StoryEntity> findByText(String text, int page, int maxResults) {
     return em.createQuery(
             "SELECT s FROM StoryEntity s WHERE s.text LIKE :text "
@@ -52,7 +50,6 @@ public class StoryEJB {
         .getResultList();
   }
 
-  @PermitAll
   public Integer countFindByText(String text) {
     return em.createQuery(
             "SELECT COUNT(s) FROM StoryEntity s WHERE s.text LIKE :text "
@@ -64,7 +61,6 @@ public class StoryEJB {
         .intValue();
   }
 
-  @PermitAll
   public List<StoryEntity> explore(
       Gender gender, Topic topic, Date startDate, Date endDate, int page, int maxResults) {
     String queryString = "SELECT s FROM StoryEntity s WHERE s.publicationDate IS NOT NULL";
@@ -98,7 +94,6 @@ public class StoryEJB {
     return query.getResultList();
   }
 
-  @PermitAll
   public Integer exploreCount(Gender gender, Topic topic, Date startDate, Date endDate) {
     String queryString = "SELECT COUNT(s) FROM StoryEntity s WHERE s.publicationDate IS NOT NULL";
 
@@ -128,7 +123,6 @@ public class StoryEJB {
     return query.getSingleResult().intValue();
   }
 
-  @PermitAll
   public List<StoryEntity> findMostViewedStories() {
     Calendar cal = Calendar.getInstance();
     cal.add(Calendar.MONTH, -1);
@@ -160,10 +154,7 @@ public class StoryEJB {
     return mostViewedStoriesByTopic;
   }
 
-  @PermitAll
   public List<StoryEntity> findStoriesByAuthor(String authorLogin, int page, int maxResults) {
-    Principal user = sessionContext.getCallerPrincipal();
-    if (user.getName().equals(authorLogin)) {
       return em.createQuery(
               "SELECT s FROM StoryEntity s WHERE s.author.login = :authorLogin", StoryEntity.class)
           .setParameter("authorLogin", authorLogin)
@@ -171,7 +162,4 @@ public class StoryEJB {
           .setMaxResults(maxResults)
           .getResultList();
     }
-    throw new EJBAccessException(
-        "User: " + user.getName() + "is not allow to access microstories of " + authorLogin);
-  }
 }
