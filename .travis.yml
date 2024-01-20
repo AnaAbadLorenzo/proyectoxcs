@@ -4,6 +4,9 @@ dist: trusty
 jdk:
   - openjdk8
 
+node_js:
+  - "16.15.1"
+
 before_script:
   - export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
   
@@ -18,6 +21,10 @@ install:
   
 script:
   - mvn clean install -U
+  - cd web
+  - mvn frontend:install-node-and-npm
+  - cd ..
+
 
 deploy:
   provider: script
