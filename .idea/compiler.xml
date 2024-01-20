@@ -9,12 +9,10 @@
         <module name="dgss2324-teamA-microstories-web" />
         <module name="dgss2324-teamA-microstories-rest" />
         <module name="dgss2324-teamA-microstories-service" />
+        <module name="dgss2324-teamA-microstories-tests" />
         <module name="dgss2324-teamA-microstories-domain" />
         <module name="dgss2324-teamA-microstories-ear" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="dgss2324-teamA-microstories-tests" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

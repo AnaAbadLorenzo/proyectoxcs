@@ -28,6 +28,7 @@
 		<module>rest</module>
 		<module>web</module>
 		<module>ear</module>
+		<module>tests</module>
 	</modules>
 
 	<properties>

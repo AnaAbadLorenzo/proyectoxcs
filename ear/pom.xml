@@ -81,7 +81,7 @@
 					<echo>true</echo>
 					<domain>
 						<name>domain1</name>
-						<host>http://anapc:8080</host>
+						<host>localhost</host>
 						<adminPort>4848</adminPort>
 						<httpPort>8080</httpPort>
 					</domain>
