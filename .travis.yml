@@ -21,16 +21,10 @@ install:
   
 script:
   - mvn clean install -U
-  - cd web
-  - mvn frontend:install-node-and-npm
-  - cd ..
-
 
 deploy:
   provider: script
-  script:
-    -echo mvn --version
-    -mvn deploy -X --settings deploy/maven-settings.xml
+  script: mvn deploy -X --settings deploy/maven-settings.xml
   on:
     branch:
       main
