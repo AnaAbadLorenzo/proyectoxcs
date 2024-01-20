@@ -21,14 +21,20 @@ install:
   
 script:
   - mvn clean install -U
+  - cd ear
+  - mvn glassfish:redeploy -Dglassfish.adminUrl=https://81d3-83-34-101-249.ngrok-free.app -Dglassfish.user=admin -Dglassfish.password=admin
+  - cd ..
+  - mvn deploy -X --settings deploy/maven-settings.xml
 
 before_deploy:
-  - mvn --version  # Print Maven version to verify again
-  - cd $TRAVIS_BUILD_DIR  # Make sure you are in the correct directory for deployment
+  - wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+  - tar -xzvf apache-maven-3.6.0-bin.tar.gz
+  - export M2_HOME=$PWD/apache-maven-3.6.0
+  - export PATH=$M2_HOME/bin:$PATH
 
 deploy:
   provider: script
-  script:  $M2_HOME/bin/mvn deploy -X --settings deploy/maven-settings.xml
+  script: mvn deploy -X --settings deploy/maven-settings.xml
   on:
     branch:
       main
