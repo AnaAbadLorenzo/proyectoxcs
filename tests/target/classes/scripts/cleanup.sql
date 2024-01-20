@@ -1,3 +1,0 @@
-DELETE FROM View;
-DELETE FROM Story;
-DELETE FROM User;

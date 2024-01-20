@@ -22,6 +22,12 @@ install:
 script:
   - mvn clean install -U
 
+before_deploy:
+  - wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+  - tar -xzvf apache-maven-3.6.0-bin.tar.gz
+  - export M2_HOME=$PWD/apache-maven-3.6.0
+  - export PATH=$M2_HOME/bin:$PATH
+
 deploy:
   provider: script
   script: mvn deploy -X --settings deploy/maven-settings.xml
