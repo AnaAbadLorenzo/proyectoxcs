@@ -28,7 +28,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: mvn deploy -X --settings deploy/maven-settings.xml
+  script:  $M2_HOME/bin/mvn deploy -X --settings deploy/maven-settings.xml
   on:
     branch:
       main
