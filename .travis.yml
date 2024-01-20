@@ -28,7 +28,9 @@ script:
 
 deploy:
   provider: script
-  script: mvn deploy -X --settings deploy/maven-settings.xml
+  script:
+    -echo mvn --version
+    -mvn deploy -X --settings deploy/maven-settings.xml
   on:
     branch:
       main
