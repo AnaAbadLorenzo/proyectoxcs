@@ -18,24 +18,8 @@ before_install:
 
 install:
   - mvn --version
-  
+
 script:
   - mvn clean install -U
-  - cd ear
-  - mvn glassfish:redeploy -Dglassfish.adminUrl=https://81d3-83-34-101-249.ngrok-free.app -Dglassfish.user=admin -Dglassfish.password=admin
-  - cd ..
-  - mvn deploy -X --settings deploy/maven-settings.xml
-
-before_deploy:
-  - wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
-  - tar -xzvf apache-maven-3.6.0-bin.tar.gz
-  - export M2_HOME=$PWD/apache-maven-3.6.0
-  - export PATH=$M2_HOME/bin:$PATH
-
-deploy:
-  provider: script
-  script: mvn deploy -X --settings deploy/maven-settings.xml
-  on:
-    branch:
-      main
+  - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://b4bf-83-34-97-207.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
 
