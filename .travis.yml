@@ -22,4 +22,8 @@ script:
 deploy:
   provider: script
   script: mvn deploy -X --settings deploy/maven-settings.xml
+  on:
+    branch:
+      main
+      master
 
