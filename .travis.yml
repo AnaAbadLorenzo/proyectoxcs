@@ -23,10 +23,8 @@ script:
   - mvn clean install -U
 
 before_deploy:
-  - wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
-  - tar -xzvf apache-maven-3.6.0-bin.tar.gz
-  - export M2_HOME=$PWD/apache-maven-3.6.0
-  - export PATH=$M2_HOME/bin:$PATH
+  - mvn --version  # Print Maven version to verify again
+  - cd $TRAVIS_BUILD_DIR  # Make sure you are in the correct directory for deployment
 
 deploy:
   provider: script
