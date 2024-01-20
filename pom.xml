@@ -167,29 +167,6 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<profiles>
-    		<profile>
-      		<id>release</id>
-      		<build>
-        		<plugins>
-          			<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-deploy-plugin</artifactId>
-					<version>3.0.0-M1</version>
-					<configuration>
-						<repository>
-							<id>central</id>
-							<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
-							<username>anaabadlorenzo24@gmail.com</username>
-							<password>cmVmdGtuOjAxOjE3MzY1MzM1Mzc6ZkJzdzZiMlNqSVBwMFdIZDBBYUZ2MGIyMFk0</password>
-						</repository>
-					</configuration>
-          			</plugin>
-       			</plugins>
-      		</build>
-    	</profile>
-	</profiles>
-
 	<build>
 		<plugins>
 			<plugin>
