@@ -21,6 +21,6 @@ install:
 
 script:
   - mvn clean install -U
-  - mvn deploy -X
+  - mvn deploy -X --settings deploy/maven-settings.xml
   - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://40f6-83-34-101-249.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
 
