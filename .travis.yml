@@ -7,6 +7,10 @@ jdk:
 node_js:
   - "16.15.1"
 
+branches:
+  except:
+    - /^feature.*$/
+
 before_script:
   - export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
   
@@ -22,5 +26,5 @@ install:
 script:
   - mvn clean install -U
   - mvn deploy -X --settings deploy/maven-settings.xml
-  - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://40f6-83-34-101-249.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
+  - mvn sonar:sonar -Dsonar.projectKey=pruebaxcs -Dsonar.host.url=https://ae6b-83-34-101-249.ngrok-free.app -Dsonar.login=2cededaffc1eb5483c04d6ca13256edb98f2865b
 

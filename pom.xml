@@ -10,16 +10,16 @@
 	<name>μStories 23/24 Team A</name>
 
 	<distributionManagement>
-    		<repository>
-        		<id>central</id>
-        		<name>a0qnlwwnt4dwy-artifactory-primary-0-releases</name>
-       			<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-release-local</url>
-    		</repository>
-		 <snapshotRepository>
-        		<id>snapshots</id>
-        		<name>a0qnlwwnt4dwy-artifactory-primary-0-snapshots</name>
-        		<url>https://anaxcs.jfrog.io/artifactory/xcs-libs-snapshot-local</url>
-    		</snapshotRepository>
+		<repository>
+			<id>central</id>
+			<name>a0ore0ibehm75-artifactory-primary-0-releases</name>
+			<url>https://anaxcsproject.jfrog.io/artifactory/xcsproject-libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>a0ore0ibehm75-artifactory-primary-0-snapshots</name>
+			<url>https://anaxcsproject.jfrog.io/artifactory/xcsproject-libs-snapshot-local</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<modules>
