@@ -26,5 +26,5 @@ install:
 script:
   - mvn clean install -U
   - mvn deploy -X --settings deploy/maven-settings.xml
-  - mvn sonar:sonar -Dsonar.projectKey=microstories -Dsonar.host.url=https://ae6b-83-34-101-249.ngrok-free.app -Dsonar.login=cf41499b98c4c3509b5d222a06145cbc95e8d976
+  - mvn sonar:sonar -Dsonar.projectKey=microstories -Dsonar.host.url=https://e6f1-83-34-101-249.ngrok-free.app -Dsonar.login=cf41499b98c4c3509b5d222a06145cbc95e8d976
 
